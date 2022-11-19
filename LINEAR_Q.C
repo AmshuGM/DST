@@ -51,7 +51,7 @@ void main(){
     clrscr();
     while(1){
     printf("MAIN MENU\n-----------------------------\n1)ADD ELEMENT TO ARRAY\n");
-    printf("2)DELETE ELEMENY  FROM ARRAY\n3)PRINT THE QUEUE\N\n4)EXIT\n ");
+    printf("2)DELETE ELEMENY  FROM ARRAY\n3)PRINT THE QUEUE\n4)EXIT\n ");
     printf("Enter the operation\n");
     scanf("%d",&casee);
     switch(casee){
