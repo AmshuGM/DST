@@ -47,16 +47,16 @@ void Dequeue(){
 
 void main(){
 
-    int casee;
+    int casee;int x=0;     int i=0;
     clrscr();
     while(1){
     printf("MAIN MENU\n-----------------------------\n1)ADD ELEMENT TO ARRAY\n");
-    printf("2)DELETE ELEMENY  FROM ARRAY\n3)PRINT THE QUEUE\n4)EXIT\n ");
+    printf("2)DELETE ELEMENY  FROM ARRAY\n3)PRINT THE QUEUE\N\n4)EXIT\n ");
     printf("Enter the operation\n");
     scanf("%d",&casee);
     switch(casee){
     case 1:
-    int x;
+
 	printf("Enter element to add in the qeue\n");
 	scanf("%d",&x);
 	Enqueue(x);
@@ -69,7 +69,7 @@ void main(){
     break;
     case 3:
     printf("stack: ")    ;
-	 for(int i=0;i<rear;i++){
+	 for( i=0;i<=rear;i++){
 	 printf("  %d",queue[i]);
 
 
