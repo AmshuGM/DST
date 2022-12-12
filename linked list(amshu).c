@@ -47,7 +47,7 @@ void middleinsert(struct node** head,int i){
    else if(i==1){printf("inserting at the beginning...\n");beginsert(head);}
     else{
     i-=2;
-    while(i--){
+    while(i-- && temp->next!=NULL){                                //for values greater than the length of linked list
         temp=temp->next;
         
     }
