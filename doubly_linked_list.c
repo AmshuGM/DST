@@ -20,7 +20,7 @@ struct node *create_node() {
     
 }
 
-void insert_beg(struct node **head) {
+void beginsert(struct node **head) {
     struct node *ptr,*temp;
     ptr=create_node();
     if(*head==NULL) {
@@ -52,7 +52,7 @@ void display(struct node *head) {
     }
 }
 
-void delete_specific(struct node **head,int pos) {
+void delete_pos(struct node **head,int pos) {
     struct node *ptr, *temp;
     if(*head==NULL) {
         printf("List is Empty\n");
@@ -78,25 +78,28 @@ void delete_specific(struct node **head,int pos) {
 
 void main() {
     struct node *head=NULL;
-    // struct node *head2=NULL;
     while(1) {
-        printf("\n1.Insert Beg  2.Display 3.Delete Specific\n");
+        printf("MAIN MENU\n1.Insert Begenning\n2.Display\n3.Delete at given position\n4.exit\n\n");
         int c;
         scanf("%d",&c);
         
         if(c==1) {
-            insert_beg(&head);
+            beginsert(&head);
+            printf("\n");
         }
         else if(c==2) {
             display(head);
+            printf("\n");
         }
         else if(c==3) {
-            printf("where do u want to delete a node?: ");
+            printf("enter the position: ");
             int pos1;
             scanf("%d",&pos1);
-            delete_specific(&head,pos1);
+            delete_pos(&head,pos1);
+            printf("\n");
         }
         else {
+            printf("\n");
             break;
         }
         
